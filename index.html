@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blind Rank Game</title>
+  <!-- Import Orbitron font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game-container">
+    <h1>Blind Ranking Game</h1>
+    <div id="team-selection">
+      <label for="teams">Select a Team:</label>
+      <select id="teams">
+              <option value="man_city">Choose</option>
+        <option value="man_city">Manchester City</option>
+        <option value="man_united">Manchester United</option>
+        <option value="liverpool">Liverpool</option>
+        <option value="arsenal">Arsenal</option>
+        <option value="chelsea">Chelsea</option>
+        <option value="bayern">Bayern Munich</option>
+        <option value="inter_milan">Inter Milan</option>
+        <option value="ac_milan">AC Milan</option>
+        <option value="juventus">Juventus</option>
+        <option value="barcelona">Barcelona</option>
+        <option value="real_madrid">Real Madrid</option>
+        <option value="all">All</option>
+      </select>
+    </div>
+    <div id="player-display">
+      <h2 id="player-name">Random Player Name</h2>
+    </div>
+    <div id="ranking-list">
+      <h3>Top 5 Rankings</h3>
+      <div id="rankings">
+        <!-- Fixed ranking positions -->
+        <div class="rank" data-rank="1" onclick="placePlayer(1)">
+          <h4>1. <span id="rank-1"></span></h4>
+        </div>
+        <div class="rank" data-rank="2" onclick="placePlayer(2)">
+          <h4>2. <span id="rank-2"></span></h4>
+        </div>
+        <div class="rank" data-rank="3" onclick="placePlayer(3)">
+          <h4>3. <span id="rank-3"></span></h4>
+        </div>
+        <div class="rank" data-rank="4" onclick="placePlayer(4)">
+          <h4>4. <span id="rank-4"></span></h4>
+        </div>
+        <div class="rank" data-rank="5" onclick="placePlayer(5)">
+          <h4>5. <span id="rank-5"></span></h4>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
